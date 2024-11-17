@@ -9,3 +9,12 @@ itself is only O(1).
 c.) again, presorting the list would be beneficial for this algorithm. using merge sort to sort the list in descending order, 
 folowed by simply returning values from indxes 0 through nine, we are given the 10 largets values in the list. Upper bound
 for this algorithm is also log linear due to the initial sorting and the return of the 10 values is also constant
+#3
+using a binary search to find the best index for a value is not necessary. time complexity remains O(n^2) due to the dominance of 
+the actual shifting of elements. it may be helpful in finding the proper location, but in large datasets it is not as helpful
+#5
+a.) insertion sort would be faster in this scenerio. When the list is already nealry sorted, time complexity of 
+O(n) is superior to O(nlogn). run time of merge sort is the same regardless of the intitial level of the lists order
+b.) Similar to the previous question, merge sort would be superior in the case of a nearly sorted list. a heap sort 
+has a runtime of O(nlogn) in its worst, best and average case. it does not take advantage of the nearly sorted list like 
+merge sort does.
