@@ -1,0 +1,11 @@
+#2
+a.) create a temporary value pointing at the value at the first index. Traverse the list, while at each index, comparing 
+the temporary value and the value at that index. If the value at the index is less than the temporary value, the temporary 
+value becomes the one at that index. An upper bound for this algorithm is O(n) since in the worst case, a comparison and a 
+swap are made at each index. This worst case would occur if the list is already sorted in descending order
+b.) It would be beneficial to sort the list first using merge sort. Next, find the size of the list and divide it by two. The 
+value at this index is the median. Time complexity is O(nlogn) due to the initial presorting. finding the median
+itself is only O(1). 
+c.) again, presorting the list would be beneficial for this algorithm. using merge sort to sort the list in descending order, 
+folowed by simply returning values from indxes 0 through nine, we are given the 10 largets values in the list. Upper bound
+for this algorithm is also log linear due to the initial sorting and the return of the 10 values is also constant
